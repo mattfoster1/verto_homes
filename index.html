@@ -15,19 +15,21 @@
 	</head>
 	
 	<body onload="start()">
-		<div class="nav_cont">
-			<img src="img/large-v.png" href="http://vertohomes.com/">
-			<ul>
-		      <li><a href="http://vertohomes.com/">About</a></li>
-		      <li><a href="www.google.com">Home Automation</a></li>
-		      <li><a href="www.bbc.com">Latest Homes</a></li> 
-		      <li><a href="www.nasa.gov">Blog</a></li> 
-		      <li><a href="http://vertohomes.com/">Careers</a></li>
-		      <li><a href="www.google.com">Press</a></li>
-		      <li><a href="www.bbc.com">Contact</a></li>
-			</ul>
-		</div>
 		<div class="mf_main">
+			<div class="nav_cont">
+				<div class="nav">
+					<!-- <img src="img/large-v.png" alt="nav logo"> -->
+					<ul>
+				      <li><a href="http://vertohomes.com/">About</a></li>
+				      <li><a href="www.google.com">Home Automation</a></li>
+				      <li><a href="www.bbc.com">Latest Homes</a></li> 
+				      <li><a href="www.nasa.gov">Blog</a></li> 
+				      <li><a href="http://vertohomes.com/">Careers</a></li>
+				      <li><a href="www.google.com">Press</a></li>
+				      <li><a href="www.bbc.com">Contact</a></li>
+					</ul>
+				</div>
+			</div>
 			<div class="headerImg_cont">
 				<img src="img/top-back@2x.jpg" class="headerImg" alt="Verto Homes"/>
 	 			<div class="logoImg"></div>	
@@ -40,7 +42,7 @@
  					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Utrum igitur tibi litteram videor an totas paginas commovere? Nam ista vestra: Si gravis, brevis; An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Si mala non sunt, iacet omnis ratio Peripateticorum. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Que Manilium, ab iisque M. Duo Reges: constructio interrete. Sic enim censent, oportunitatis esse beate vivere.
  				</p>
  				
- 				<button>View introduction to Verto Homes</button>
+ 				<button onClick="location.href='http://www.google.com'">View introduction to Verto Homes</button>
  				
  				<div class="container">
 					<div class="row">
@@ -93,14 +95,16 @@
  			</div> <!-- end of sustainable_living -->
  			
  			<div class="mf_section future_home_automation">
- 				<img class="vesta" src="img/vesta-logo@2x.png"/ alt="vesta">
+ 				<img class="vesta-logo" src="img/vesta-logo@2x.png" alt="vesta"/>
  				<h1>The future of home automation.</h1>
  				<p>
  					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Utrum igitur tibi litteram videor an totas paginas commovere? Nam ista vestra: Si gravis, brevis; An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Si mala non sunt.
  				</p>
- 				<button>Find out more</button>
- 				<img class="vesta-back" src="img/vesta-back@2x.jpg"/>
- 				<img class="vesta-phone" src="img/vesta-phone@2x.png">
+ 				<button class="cta" onClick="location.href='http://www.google.com'">Find out more</button>
+ 				<div class="vesta-cont">
+	 				<img class="vesta-back" src="img/vesta-back@2x.jpg" alt="vesta back"/>
+	 				<div class="vesta-phone"></div>
+	 			</div>
  			</div> <!-- end of future_home_automation -->
 
 
