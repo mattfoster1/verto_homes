@@ -1,0 +1,169 @@
+@mixin flex_row {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    flex-direction: row;
+	justify-content: space-between;
+}
+
+@mixin flex_center {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;	
+}
+
+$special-green: rgb(148,194,62);
+$special-green-clicked: #739631;
+$maxWidth: 1200px;
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: raleway;
+}
+
+.nav_cont {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(144,238,144, 0.5);
+	z-index: 1;
+	// max-width: $maxWidth;
+	@include flex_row;
+
+	ul {
+		right: 0;
+		@include flex_row;
+		list-style: none;
+		margin: 0 50px 0 0;
+	}
+
+	li {
+		height: 100%;
+		width: auto;
+		margin: 0 10px;
+		vertical-align: middle;
+		@include flex_center;
+		font-size: 18px;
+	}
+
+	a {
+		color: white;
+		:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.mf_main {
+	height: auto;
+	width: 100%;
+	background-color: white;
+	border: solid 1px red;
+	max-width: $maxWidth;
+	margin: auto;
+	text-align: center;
+
+	h1 {
+		color: $special-green;
+		font-size: 50px;
+		padding-bottom: 10px;
+	}	
+
+	h2 {
+		color: $special-green;
+		font-size: 22px;
+	}
+
+	h3 {
+		margin-top: 0;
+		color: $special-green;
+		font-size: 18px;	
+	}
+
+	p {
+		margin: 40px auto 20px auto;
+		width: 85%;
+		font-size: 15px;
+	}
+}
+
+.mf_section {
+	margin: auto;
+	padding: 70px 0;
+}
+
+.about_us {
+}
+
+.sustainable_living {
+	.container {
+		margin-top: 70px;
+	}
+
+	img {
+		height: 100px;
+		margin: 20px;
+		padding: 10px;
+	}
+}
+
+.future_home_automation {
+	.vesta {
+		height: 100px;
+		padding: 10px;
+	}
+}
+
+button {
+	background-color: $special-green;
+	padding: 15px 50px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	font-size: 15px;
+	border: none;
+	border-radius: 4px;
+	color: white;
+
+	&:hover {
+		background-color: $special-green-clicked;
+	}
+}
+
+.headerImg_cont {
+	position: relative;
+	width: 100%;
+	height: auto;
+
+	.headerImg {
+		width: 100%;
+		height: auto;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+
+	.logoImg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: url("img/large-v@2x.png") no-repeat center;
+		background-size: auto 30%;
+	}
+}
